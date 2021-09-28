@@ -47,7 +47,7 @@ data "vsphere_virtual_machine" "template" {
 resource "vsphere_virtual_machine" "demo" {
   name             = "vm-one"
   num_cpus         = 2
-  memory           = 2048 
+  memory           = 4096 
   datastore_id     = data.vsphere_datastore.datastore.id
   resource_pool_id = data.vsphere_resource_pool.pool.id
   guest_id         = data.vsphere_virtual_machine.template.guest_id

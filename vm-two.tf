@@ -20,7 +20,7 @@ resource "vsphere_virtual_machine" "vm-two" {
   # Use a predefined vmware template as main disk
   disk {
     label = "vm-two.vmdk"
-    size = "10"
+    size = "16"
   }
 
   clone {

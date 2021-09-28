@@ -46,7 +46,7 @@ data "vsphere_virtual_machine" "template" {
 # Set vm parameters
 resource "vsphere_virtual_machine" "demo" {
   name             = "vm-one"
-  num_cpus         = 2
+  num_cpus         = 4 
   memory           = 4096 
   datastore_id     = data.vsphere_datastore.datastore.id
   resource_pool_id = data.vsphere_resource_pool.pool.id
